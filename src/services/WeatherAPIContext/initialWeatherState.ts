@@ -48,5 +48,10 @@ export const initialWeatherState: WeatherDataModel = {
 export const initialWeatherAPIState: IWeatherContextStore = {
   weatherData: initialWeatherState,
   isLoading: false,
-  error: "",
+  error: null,
+  setSearchCity: (city) => {
+    throw new Error(
+      `Has buscado ${city}, pero el hook de estado 'setSearchCity' no ha sido instanciado`
+    );
+  },
 };

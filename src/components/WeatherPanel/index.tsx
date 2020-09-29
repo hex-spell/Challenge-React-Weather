@@ -18,7 +18,13 @@ const WeatherPanel: React.FC = () => {
     return <h1>Cargando...</h1>;
   }
   if (error) {
-    return <h1>{error}</h1>;
+    return (
+      <h1>
+        {error.cod === "404"
+          ? "Ciudad no encontrada..."
+          : "Ha habido un error inesperado..."}
+      </h1>
+    );
   }
 
   return (

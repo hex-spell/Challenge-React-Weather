@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./App.module.css";
 import WeatherPanel from "./components/WeatherPanel";
 import Box from "./components/Layout/Box";
 import Map from "./components/Map";
@@ -10,7 +9,7 @@ const App: React.FC = () => {
   return (
     <WeatherAPIContextProvider>
       <Navbar />
-      <div className={styles.App}>
+      <div className="container">
         <Box>
           <WeatherPanel />
         </Box>

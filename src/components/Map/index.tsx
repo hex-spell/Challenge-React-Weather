@@ -11,16 +11,19 @@ const Map: React.FC = () => {
     weatherData: {
       coord: { lon, lat },
     },
+    isLoading,
   } = useContext(WeatherAPIContext);
+  if (isLoading) {
+    return <h1>Cargando mapa...</h1>;
+  }
   return (
     <div style={{ height: "100vh", width: "100%" }}>
-      {lon && lat && (
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: mapApiKey }}
-          defaultZoom={zoom}
-          defaultCenter={{ lng: lon, lat }}
-        />
-      )}
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: mapApiKey }}
+        defaultZoom={zoom}
+        defaultCenter={{ lng: 0, lat: 0 }}
+        center={{ lng: lon, lat }}
+      />
     </div>
   );
 };

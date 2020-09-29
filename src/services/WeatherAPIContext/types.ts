@@ -1,3 +1,4 @@
+// MainWeatherData y WeatherDescription los separo del tipo principal porque los importo desde el componente WeatherPanel
 export type MainWeatherData = {
   temp: number;
   feels_like: number;
@@ -52,6 +53,7 @@ export type WeatherAPIError = {
 
 export interface IWeatherContextStore {
   weatherData: WeatherDataModel;
-  error: string;
+  error: WeatherAPIError | null;
   isLoading: boolean;
+  setSearchCity: (cityName: string) => void;
 }
