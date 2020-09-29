@@ -1,0 +1,25 @@
+.App {
+  margin-top: 5px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .App {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .App {
+    width: 80%;
+  }
+}

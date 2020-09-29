@@ -1,0 +1,48 @@
+.WeatherDisplay h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+}
+.WeatherDisplay h1 {
+  font-size: x-large;
+}
+
+.WeatherDisplay h2 {
+  font-size: medium;
+}
+
+.WeatherDisplay h1,
+h2 {
+  padding-left: 15px;
+}
+
+.temp {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.WeatherDisplay {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.WeatherDisplay ul {
+  list-style: none;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
