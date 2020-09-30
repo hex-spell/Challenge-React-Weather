@@ -8,7 +8,7 @@ const Searchbar: React.FC = () => {
 
   const onSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
-    if (searchInput.current) {
+    if (searchInput.current && searchInput.current.value) {
       setSearchCity(searchInput.current.value);
       searchInput.current.value = "";
     }
